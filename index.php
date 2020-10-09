@@ -21,13 +21,22 @@
             <a href="#"><li>Inscription</li></a>
         </ul>
 
-    <p>
-    <!-- Display last books in the database here -->
-    </p>
-    
     </header>
+
     <?php
         include('./database/connection_database.php');
-    ?>
+        $getLastBooks = $bdd->query('SELECT * FROM addbook ORDER BY id DESC LIMIT 5');
+            ?>
+
+        <div>
+
+            <?php
+                while($displayLastBook = $getLastBooks->fetch()){
+                    echo $displayLastBook['nameBook'] . "</br>" . $displayLastBook['descBook'] . "</br>" . $displayLastBook['price'] . '€ </br>' ;
+                }
+            ?>
+
+        </div>
+
 </body>
 </html>

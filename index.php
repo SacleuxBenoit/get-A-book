@@ -28,15 +28,15 @@
         $getLastBooks = $bdd->query('SELECT * FROM addbook ORDER BY id DESC LIMIT 5');
             ?>
 
-        <div>
+        
 
             <?php
                 while($displayLastBook = $getLastBooks->fetch()){
-                    echo $displayLastBook['nameBook'] . "</br>" . $displayLastBook['descBook'] . "</br>" . $displayLastBook['price'] . '€ </br>' ;
+                    echo '<div class="containerLastBook">' . $displayLastBook['nameBook'] . "</br>" . $displayLastBook['descBook'] . "</br>" . $displayLastBook['price'] . '€ </br>' . '</div>' ;
                 }
             ?>
 
-        </div>
+
 
 </body>
 </html>

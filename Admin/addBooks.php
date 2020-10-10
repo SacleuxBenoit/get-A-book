@@ -25,6 +25,11 @@
             <input type="text" id="price" name="price">
         </p>
 
+        <p>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </p>
+
         <input type="submit" value="Submit">
     </form>
 </body>

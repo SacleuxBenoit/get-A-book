@@ -23,18 +23,19 @@
 
     </header>
 
-    <?php
-        include('./database/connection_database.php');
-        $getLastBooks = $bdd->query('SELECT * FROM addbook ORDER BY id DESC LIMIT 5');
-            ?>
+    <h2>lastest additions</h2>
+        <?php
+            include('./database/connection_database.php');
+            $getLastBooks = $bdd->query('SELECT * FROM addbook ORDER BY id DESC LIMIT 5');
 
-        
-
-            <?php
-                while($displayLastBook = $getLastBooks->fetch()){
-                    echo '<div class="containerLastBook">' . $displayLastBook['nameBook'] . "</br>" . $displayLastBook['descBook'] . "</br>" . $displayLastBook['price'] . '€ </br>' . '</div>' ;
-                }
-            ?>
+            while($displayLastBook = $getLastBooks->fetch()){
+                 echo '<div class="containerLastBook">' . 
+                      '<h3>' .$displayLastBook['nameBook'] . '</h3>' 
+                             .$displayLastBook['author'] . "</br>"
+                             .$displayLastBook['descBook'] . "</br>" 
+                             .$displayLastBook['price'] . '€ </br>' . '</div>' ;
+            }
+        ?>
 
 
 

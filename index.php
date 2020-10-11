@@ -17,8 +17,7 @@
         </form>
 
         <ul>
-            <a href="#"><li>Connexion</li></a>
-            <a href="#"><li>Inscription</li></a>
+            <a href="./layouts/login_register.php"><li>Login | Register</li></a>
         </ul>
 
     </header>

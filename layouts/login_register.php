@@ -34,7 +34,7 @@
     <div class="register">
         <h2>Register</h2>
 
-        <form action="#" method="post">
+        <form action="../database/register.php" method="post">
             <p>
                 <label for="RegisterEmail">Email :</label>
                 <input type="email" id="RegisterEmail" name="RegisterEmail">

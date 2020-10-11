@@ -33,7 +33,7 @@
                       '<h3>' .$displayLastBook['nameBook'] . '</h3>' 
                              .$displayLastBook['author'] . "</br>"
                              .$displayLastBook['descBook'] . "</br>" 
-                             .$displayLastBook['price'] . '€ </br>' . '</div>' ;
+                             .$displayLastBook['price'] . '€' . '</div>' ;
             }
         ?>
 

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Admin/style_addBooks.css">
+    <link rel="stylesheet" href="../../css/Admin/style_addBooks.css">
     <title>Document</title>
 </head>
 <body>
 
     <h1>Add your book : </h1>
-    <form action="../database/addBooks.php" method="POST">
+    <form action="../../database/addBooks.php" method="POST">
         <p>
             <label for="name">Name of the book</label>
             <input type="text" id="name" name="name">

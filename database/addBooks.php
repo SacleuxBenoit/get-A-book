@@ -9,9 +9,9 @@ if(!empty($_POST['name'])||!empty($_POST['desc'])||!empty($_POST['price'])){
     $insertBook->bindParam(':price', $_POST['price']);
     $insertBook->bindParam(':author', $_POST['author']);
     $insertBook->execute();
-    header('Location: ../Admin/addBooks.php');
+    header('Location: ../layouts/Admin/addBooks.php');
 }
 else{
-    header('Location: ../Admin/addBooks.php');
+    header('Location: ../layouts/Admin/addBooks.php');
 }
 ?>

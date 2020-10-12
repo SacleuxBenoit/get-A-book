@@ -15,7 +15,7 @@
     <div class="login">
         <h2>Login</h2>
 
-        <form action="#" method="post">
+        <form action="../database/login.php" method="post">
             <p>
                 <label for="LoginEmail">Email :</label>
                 <input type="email" id="LoginEmail" name="LoginEmail">

@@ -7,10 +7,7 @@ $verifyEmailDatabase->execute();
 
 $verifyEmail = $verifyEmailDatabase->fetch();
 
-if($verifyEmail['email'] == $_POST['RegisterEmail']){
-    header('Location: ../layouts/login_register.php');
-}
-else if(empty($_POST['RegisterEmail']) || empty($_POST['RegisterPass'])){
+if($verifyEmail['email'] == $_POST['RegisterEmail'] || empty($_POST['RegisterEmail']) || empty($_POST['RegisterPass'])){
     header('Location: ../layouts/login_register.php');
 }
 else{

@@ -18,7 +18,21 @@
 
         <ul>
             <a href="./layouts/login_register.php"><li>Login | Register</li></a>
-            <a href="#">Orders</a>
+            <a href="#"><li>Orders</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#">BD</a></li>
+            <li><a href="#">Développement personnel</a></li>
+            <li><a href="#">Droit & économie</a></li>
+            <li><a href="#">Histoire</a></li>
+            <li><a href="#">Jeunesse</a></li>
+            <li><a href="#">Littérature</a></li>
+            <li><a href="#">Policier, suspense, thrillers</a></li>
+            <li><a href="#">Religion et spiritualité</a></li>
+            <li><a href="#">SF, fantasy</a></li>
+            <li><a href="#">Scolairey</a></li>
+            
         </ul>
 
     </header>

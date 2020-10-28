@@ -2,3 +2,8 @@
     margin-top: 1.5em;
     border: 1px solid black;
 }
+
+a, li{
+    list-style: none;
+    text-decoration: none;
+}

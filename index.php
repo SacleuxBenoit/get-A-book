@@ -18,6 +18,7 @@
 
         <ul>
             <a href="./layouts/login_register.php"><li>Login | Register</li></a>
+            <a href="#">Orders</a>
         </ul>
 
     </header>
@@ -25,18 +26,16 @@
     <h2>lastest additions</h2>
         <?php
             include('./database/connection_database.php');
-            $getLastBooks = $bdd->query('SELECT * FROM addbook ORDER BY id DESC LIMIT 5');
+            $getLastBooks = $bdd->query('SELECT * FROM books ORDER BY id DESC LIMIT 5');
 
             while($displayLastBook = $getLastBooks->fetch()){
                  echo '<div class="containerLastBook">' . 
                       '<h3>' .$displayLastBook['nameBook'] . '</h3>' 
                              .$displayLastBook['author'] . "</br>"
                              .$displayLastBook['descBook'] . "</br>" 
-                             .$displayLastBook['price'] . '€' . '</div>' ;
+                             .$displayLastBook['price'] . '€' . '<p>' . '<a href="#">' . "Add to cart" .'</a>' . '</p>' . '</div>';
             }
         ?>
-
-
 
 </body>
 </html>

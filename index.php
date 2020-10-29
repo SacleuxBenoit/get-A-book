@@ -21,17 +21,17 @@
             <a href="#"><li>Orders</a></li>
         </ul>
 
-        <ul>
-            <li><a href="#">BD</a></li>
-            <li><a href="#">Développement personnel</a></li>
-            <li><a href="#">Droit & économie</a></li>
-            <li><a href="#">Histoire</a></li>
-            <li><a href="#">Jeunesse</a></li>
-            <li><a href="#">Littérature</a></li>
-            <li><a href="#">Policier, suspense, thrillers</a></li>
-            <li><a href="#">Religion et spiritualité</a></li>
-            <li><a href="#">SF, fantasy</a></li>
-            <li><a href="#">Scolairey</a></li>
+        <ul class="navTop">
+            <li class="bd"><a href="#">BD</a></li>
+            <li class="devPerso"><a href="#">Développement personnel</a></li>
+            <li class="droitEconomie"><a href="#">Droit & économie</a></li>
+            <li class="histoire"><a href="#">Histoire</a></li>
+            <li class=jeunesse><a href="#">Jeunesse</a></li>
+            <li class="Litterature"><a href="#">Littérature</a></li>
+            <li class="policierSuspensThrillers"><a href="#">Policier, suspense, thrillers</a></li>
+            <li class="religion"><a href="#">Religion et spiritualité</a></li>
+            <li class="sfFantasy"><a href="#">SF, fantasy</a></li>
+            <li class="scolaire"><a href="#">Scolaire</a></li>
             
         </ul>
 

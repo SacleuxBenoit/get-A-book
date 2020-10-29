@@ -7,3 +7,10 @@ a, li{
     list-style-type: none;
     text-decoration: none;
 }
+
+.navTop{
+    display: grid;
+    grid-template-areas: "bd devPerso droitEconomie histoire jeunesse Litterature policierSuspensThrillers religion sfFantasy scolaire";
+    justify-items: center;
+}
+

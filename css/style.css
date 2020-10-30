@@ -12,5 +12,7 @@ a, li{
     display: grid;
     grid-template-areas: "bd devPerso droitEconomie histoire jeunesse Litterature policierSuspensThrillers religion sfFantasy scolaire";
     justify-items: center;
+    border: 1px solid black;
+    height: 1.5em;
 }
 

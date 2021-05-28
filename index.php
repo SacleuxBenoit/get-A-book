@@ -1,3 +1,8 @@
+<?php
+session_start();
+include('./login_database.php');
+include('./database/connection_database.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +44,6 @@
 
     <h2>lastest additions</h2>
         <?php
-            include('./database/connection_database.php');
             $getLastBooks = $bdd->query('SELECT * FROM books ORDER BY id DESC LIMIT 5');
 
             while($displayLastBook = $getLastBooks->fetch()){

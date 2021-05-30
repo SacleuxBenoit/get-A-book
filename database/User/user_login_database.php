@@ -9,7 +9,7 @@ $user_login->execute();
 $donnees = $user_login->fetch();
 
 if($_POST['LoginUsername'] == $donnees['username'] && password_verify($_POST['LoginPass'],$donnees['pass'])){
-    $_SESSION['id_user'] = $donnees['id_user'];
+    $_SESSION['username'] = $_POST['LoginUsername'];
     header('Location: ../../index.php');
 }else{
     header('Location: ../../layouts/login_register.php');

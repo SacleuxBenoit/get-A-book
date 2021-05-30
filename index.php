@@ -17,7 +17,7 @@ include('./database/connection_database.php');
         <h1>Get-A-Book</h1>
         
         <form action="#" method="POST">
-            <input type="text" id="">
+            <input type="text" id="InputSearchBar" placeholder="Search...">
             <input type="submit" value="Submit">
         </form>
 

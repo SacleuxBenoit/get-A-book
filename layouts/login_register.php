@@ -17,8 +17,8 @@
 
         <form action="../database/User/user_login_database.php" method="post">
             <p>
-                <label for="LoginEmail">Email :</label>
-                <input type="email" id="LoginEmail" name="LoginEmail">
+                <label for="LoginUsername">username :</label>
+                <input type="username" id="LoginUsername" name="LoginUsername">
             </p>
 
             <p>
@@ -36,8 +36,8 @@
 
         <form action="../database/User/user_register_database.php" method="post">
             <p>
-                <label for="RegisterEmail">Email :</label>
-                <input type="email" id="RegisterEmail" name="RegisterEmail">
+                <label for="RegisterUsername">username :</label>
+                <input type="text" id="RegisterUsername" name="RegisterUsername">
             </p>
 
             <p>

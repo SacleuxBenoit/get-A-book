@@ -1,19 +1,20 @@
 <?php
-include('connection_database.php');
+include('../../login_database.php');
+include('../connection_database.php');
 
-$verifyEmailDatabase = $bdd->prepare('SELECT email FROM user WHERE email = :email');
-$verifyEmailDatabase->bindParam(':email', $_POST['RegisterEmail']);
-$verifyEmailDatabase->execute();
+$verifyUsernameDatabase = $bdd->prepare('SELECT username FROM user WHERE username = :username');
+$verifyUsernameDatabase->bindParam(':username', $_POST['RegisterUsername']);
+$verifyUsernameDatabase->execute();
 
-$verifyEmail = $verifyEmailDatabase->fetch();
+$verifyUsername = $verifyUsernameDatabase->fetch();
 
-if($verifyEmail['email'] == $_POST['RegisterEmail'] || empty($_POST['RegisterEmail']) || empty($_POST['RegisterPass'])){
-    header('Location: ../layouts/login_register.php');
+if($verifyUsername['username'] == $_POST['RegisterUsername'] || empty($_POST['RegisterUsername']) || empty($_POST['RegisterPass'])){
+    header('Location: ../../layouts/login_register.php');
 }
 else{
     $pass_hash = password_hash($_POST['RegisterPass'], PASSWORD_DEFAULT);
-    $user_info = $bdd->prepare('INSERT INTO user(email,pass) VALUES(:email, :pass)');
-    $user_info->bindParam(':email', $_POST['RegisterEmail']);
+    $user_info = $bdd->prepare('INSERT INTO user(username,pass) VALUES(:username, :pass)');
+    $user_info->bindParam(':username', $_POST['Registerusername']);
     $user_info->bindParam(':pass', $pass_hash);
     $user_info->execute();
 }

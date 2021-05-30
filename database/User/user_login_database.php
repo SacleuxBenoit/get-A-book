@@ -8,8 +8,8 @@ $user_login->execute();
 $donnees = $user_login->fetch();
 
 if($_POST['LoginEmail'] == $donnees['email'] && password_verify($_POST['LoginPass'],$donnees['pass'])){
-    header('Location: ./../index.php');
+    header('Location: ../../index.php');
 }else{
-    header('Location: ../layouts/login_register.php');
+    header('Location: ../../layouts/login_register.php');
 }
 ?>

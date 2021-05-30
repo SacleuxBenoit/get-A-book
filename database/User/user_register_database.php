@@ -14,8 +14,11 @@ if($verifyUsername['username'] == $_POST['RegisterUsername'] || empty($_POST['Re
 else{
     $pass_hash = password_hash($_POST['RegisterPass'], PASSWORD_DEFAULT);
     $user_info = $bdd->prepare('INSERT INTO user(username,pass) VALUES(:username, :pass)');
-    $user_info->bindParam(':username', $_POST['Registerusername']);
+    $user_info->bindParam(':username', $_POST['RegisterUsername']);
     $user_info->bindParam(':pass', $pass_hash);
     $user_info->execute();
+
+    $_SESSION['username'] = $_POST['RegisterUsername'];
+    header('Location: ../../index.php');
 }
 ?>

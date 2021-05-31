@@ -9,7 +9,7 @@
 <body>
 
     <h1>Add your book : </h1>
-    <form action="../../database/addBooks.php" method="POST">
+    <form action="../../database/Books/addBooks.php" method="POST">
         <p>
             <label for="name">Name of the book</label>
             <input type="text" id="name" name="name">

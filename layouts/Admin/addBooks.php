@@ -16,18 +16,23 @@
         </p>
 
         <p>
-            <label for="desc">Description of the book</label>
+            <label for="desc">Description :</label>
             <input type="text" id="desc" name="desc">
         </p>
 
         <p>
-            <label for="price">Price for the book</label>
+            <label for="price">Price :</label>
             <input type="text" id="price" name="price">
         </p>
 
         <p>
-            <label for="author">Author</label>
+            <label for="author">Author :</label>
             <input type="text" id="author" name="author">
+        </p>
+
+        <p>
+            <label for="categorie">categorie :</label>
+            <input type="text" id="categorie" name="categorie">
         </p>
 
         <input type="submit" value="Submit">

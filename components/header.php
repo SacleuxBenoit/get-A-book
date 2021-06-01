@@ -13,17 +13,16 @@
         </ul>
 
         <ul class="navTop">
-            <li class="bd"><a href="#">BD</a></li>
-            <li class="devPerso"><a href="#">Développement personnel</a></li>
-            <li class="droitEconomie"><a href="#">Droit & économie</a></li>
-            <li class="histoire"><a href="#">Histoire</a></li>
-            <li class=jeunesse><a href="#">Jeunesse</a></li>
-            <li class="Litterature"><a href="#">Littérature</a></li>
-            <li class="policierSuspensThrillers"><a href="#">Policier, suspense, thrillers</a></li>
-            <li class="religion"><a href="#">Religion et spiritualité</a></li>
-            <li class="sfFantasy"><a href="#">SF, fantasy</a></li>
-            <li class="scolaire"><a href="#">Scolaire</a></li>
-            
+            <?php
+                $select_categories = $bdd->query('SELECT DISTINCT categorie FROM books');
+                $select_categories->execute();
+                
+                while($fetch_categories = $select_categories->fetch()){
+                ?>
+                    <li><a href="#"><?php echo $fetch_categories['categorie']?></a></li>
+                <?php
+                }
+            ?>        
         </ul>
 
     </header>

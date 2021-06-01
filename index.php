@@ -24,6 +24,7 @@ include('./database/connection_database.php');
         <ul>
             <a href="./layouts/login_register.php"><li>Login | Register</li></a>
             <a href="#"><li>Orders</a></li>
+            <a href="./layouts/Admin/addBooks.php"><li>Add books</a></li>
         </ul>
 
         <ul class="navTop">

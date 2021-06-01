@@ -10,7 +10,7 @@ a, li{
 
 .navTop{
     display: grid;
-    grid-template-areas: "bd devPerso droitEconomie histoire jeunesse Litterature policierSuspensThrillers religion sfFantasy scolaire";
+    grid-template-areas: "header header header header";
     justify-items: center;
     border: 1px solid black;
     height: 1.5em;

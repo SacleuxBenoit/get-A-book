@@ -15,6 +15,18 @@ include('../database/connection_database.php');
 <body>
     <?php
         include('../components/header.php');
+    
+            $select_categorie = $bdd->prepare('SELECT * FROM books WHERE categorie = :categorie');
+            $select_categorie->bindParam(':categorie', $_GET['categorie']);
+            $select_categorie->execute();
+
+            while($fetch_categorie = $select_categorie->fetch()){
+                 echo '<div class="containerLastBook">' . 
+                      '<h3>' .$fetch_categorie['nameBook'] . '</h3>' 
+                             .$fetch_categorie['author'] . "</br>"
+                             .$fetch_categorie['descBook'] . "</br>" 
+                             .$fetch_categorie['price'] . '€' . '<p>' . '<a href="#">' . "Add to cart" .'</a>' . '</p>' . '</div>';
+            }
     ?>
 </body>
 </html>

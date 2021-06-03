@@ -19,7 +19,7 @@
                 
                 while($fetch_categories = $select_categories->fetch()){
                 ?>
-                    <li><a href="http://localhost:8888/test/get-A-book/layouts/categorie.php?categories=<?php echo $fetch_categories['categorie']?>"><?php echo $fetch_categories['categorie']?></a></li>
+                    <li><a href="http://localhost:8888/test/get-A-book/layouts/categorie.php?categorie=<?php echo $fetch_categories['categorie']?>"><?php echo $fetch_categories['categorie']?></a></li>
                 <?php
                 }
             ?>        

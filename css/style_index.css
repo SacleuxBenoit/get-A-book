@@ -16,3 +16,7 @@ a, li{
     border: 1px solid black;
     height: 1.5em;
 }
+
+header{
+    grid-area: header;
+}

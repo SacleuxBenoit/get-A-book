@@ -1,0 +1,16 @@
+a, li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navTop{
+    display: grid;
+    grid-template-areas: "header header header header";
+    justify-items: center;
+    border: 1px solid black;
+    height: 1.5em;
+}
+
+header{
+    grid-area: header;
+}

@@ -7,9 +7,9 @@
         </form>
 
         <ul>
-            <a href="./layouts/login_register.php"><li>Login | Register</li></a>
+            <a href="http://localhost:8888/test/get-A-book/layouts/login_register.php"><li>Login | Register</li></a>
             <a href="#"><li>Orders</a></li>
-            <a href="./layouts/Admin/addBooks.php"><li>Add books</a></li>
+            <a href="http://localhost:8888/test/get-A-book/layouts/Admin/addBooks.php"><li>Add books</a></li>
         </ul>
 
         <ul class="navTop">
